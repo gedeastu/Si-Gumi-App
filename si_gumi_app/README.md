@@ -1,6 +1,6 @@
-# si_gumi_app
+Si Gumi
 
-A new Flutter project.
+Merupakan sebuah Aplikasi pertukaran Sampah menjadi Hadiah, yang dapat menarik hati para anak-anak
 
 ## Getting Started
 
