@@ -7,7 +7,7 @@ class AppBarHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      toolbarHeight: 80,
+      toolbarHeight: 100,
       backgroundColor: Colors.transparent,
       leading: Container(
         padding: EdgeInsets.only(left: 20),
@@ -16,8 +16,8 @@ class AppBarHome extends StatelessWidget {
           children: [
             GestureDetector(
               child: Container(
-                width: 56,
-                height: 56,
+                width: 60,
+                height: 60,
                 decoration: BoxDecoration(
                   border: Border.all(color: Color.fromARGB(255, 59, 50, 121),width: 3),
                   borderRadius: BorderRadius.circular(100)
@@ -34,12 +34,12 @@ class AppBarHome extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text("Good Morning!",style:GoogleFonts.poppins(
-                fontSize: 12,
+                fontSize: 13,
                 fontWeight: FontWeight.w500
               ),),
-              SizedBox(height: 2.5,),
+              SizedBox(height: 2,),
               Text("Dwi Widiyanti",style: GoogleFonts.poppins(
-                fontSize: 16,
+                fontSize: 17,
                 fontWeight: FontWeight.w600
               ),)
             ],
