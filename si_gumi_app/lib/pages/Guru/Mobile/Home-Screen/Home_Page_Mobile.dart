@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:si_gumi_app/components/Guru/Home-Components/AppBar-Home.dart';
+//import 'package:si_gumi_app/components/Guru/Home-Components/Banner-Home.dart';
 import 'package:si_gumi_app/components/Guru/Home-Components/Carousel-Home.dart';
 //import 'package:cached_network_image/cached_network_image.dart';
 
@@ -21,9 +22,12 @@ class HomePageMobile extends StatelessWidget {
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Container(
+          width: double.infinity,
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              CarouselHome()
+              //CarouselHome()
+              BannerHome()
             ],
           ),
         )

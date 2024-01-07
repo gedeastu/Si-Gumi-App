@@ -49,7 +49,7 @@ class _CarouselHomeState extends State<CarouselHome> {
   }
   Widget images(String assetsImages,int index){
   return Container(
-    margin: EdgeInsets.symmetric(horizontal: 10),
+    margin: EdgeInsets.symmetric(horizontal: 45),
     child: Image.asset(assetsImages,fit: BoxFit.cover,),
   );
   }
