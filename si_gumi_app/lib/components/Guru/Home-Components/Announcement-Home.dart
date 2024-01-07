@@ -14,24 +14,101 @@ class AnnouncementHome extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         color: Color.fromARGB(255, 234, 242, 253)
       ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      child: Stack(
         children: [
-          Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text("Game hari ini",style: GoogleFonts.poppins(
-              fontSize: 20,
-              fontWeight: FontWeight.w600
-            )),
-            Text("Bermain, belajar, dan selesaikan!",style: GoogleFonts.poppins(
-              fontSize: 13,
-              fontWeight: FontWeight.w400,
-              color: Color.fromARGB(255, 119, 119, 119)
-            ) ,)
-          ],),
-          Image.asset("assets/images/tempatSampah.png",width: 120,height: 120,)
+          Positioned(
+              top: 5,
+              right: 95,
+              child: Container(
+                width: 30,
+                height: 30,
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(80, 108, 72, 151),
+                  borderRadius: BorderRadius.circular(10)
+                ),
+              ),
+            ),
+            Positioned(
+              bottom: 5,
+              right: 95,
+              child: Container(
+                width: 30,
+                height: 30,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Color.fromARGB(80, 255, 150, 175),
+                ),
+              ),
+            ),
+            Positioned(
+              top: 35,
+              right: 65,
+              child: Container(
+                width: 30,
+                height: 30,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Color.fromARGB(80, 58, 145, 170)
+                ),
+          ),
+          ),
+            Positioned(
+              bottom: 5,
+              right: 40,
+              child: Container(
+                width: 30,
+                height: 30,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Color.fromARGB(80, 255, 150, 175),
+                ),
+              ),
+            ),
+             Positioned(
+              top: 5,
+              right: 40,
+              child: Container(
+                width: 30,
+                height: 30,
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(80, 108, 72, 151),
+                  borderRadius: BorderRadius.circular(10)
+                ),
+              ),
+            ),
+            Positioned(
+              top: 35,
+              right: 5,
+              child: Container(
+                width: 30,
+                height: 30,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Color.fromARGB(80, 58, 145, 170)
+                ),
+          ),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("Game hari ini",style: GoogleFonts.poppins(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600
+                )),
+                Text("Bermain, belajar, dan selesaikan!",style: GoogleFonts.poppins(
+                  fontSize: 13,
+                  fontWeight: FontWeight.w400,
+                  color: Color.fromARGB(255, 119, 119, 119)
+                ) ,)
+              ],),
+              Image.asset("assets/images/tempatSampah.png",width: 120,height: 120,),
+              
+            ],
+          ),
         ],
       ),
     );
