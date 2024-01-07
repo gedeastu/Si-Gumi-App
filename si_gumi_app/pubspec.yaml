@@ -68,6 +68,7 @@ flutter:
     - assets/images/user.png
     - assets/images/profile-guru.jpg
     - assets/images/Image-carousel.jpg
+    - assets/images/tempatSampah.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

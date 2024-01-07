@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:si_gumi_app/components/Guru/Home-Components/Announcement-Home.dart';
 import 'package:si_gumi_app/components/Guru/Home-Components/AppBar-Home.dart';
 //import 'package:si_gumi_app/components/Guru/Home-Components/Banner-Home.dart';
 import 'package:si_gumi_app/components/Guru/Home-Components/Carousel-Home.dart';
@@ -26,8 +27,10 @@ class HomePageMobile extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              CarouselHome()
+              CarouselHome(),
               //BannerHome()
+              SizedBox(height: 20,),
+              AnnouncementHome()
             ],
           ),
         )
