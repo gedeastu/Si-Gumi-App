@@ -8,6 +8,6 @@ class HomeLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ResponsiveLayout(mobileBody: HomePageMobile(), desktopBody: HomePageDesktop());
+    return const ResponsiveLayout(mobileBody: HomePageMobile(), desktopBody: HomePageDesktop());
   }
 }

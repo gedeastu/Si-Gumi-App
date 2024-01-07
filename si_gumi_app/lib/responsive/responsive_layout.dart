@@ -4,7 +4,7 @@ import 'package:si_gumi_app/responsive/dimensions.dart';
 class ResponsiveLayout extends StatefulWidget {
   final Widget mobileBody;
   final Widget desktopBody;
-  ResponsiveLayout({
+  const ResponsiveLayout({
     super.key,
     required this.mobileBody,
     required this.desktopBody

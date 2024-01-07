@@ -6,14 +6,15 @@ class Root extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        extendBody: true,
         backgroundColor: Colors.white,
         body: HomeLayout(),
-        bottomNavigationBar: BottomNavigationBar(
-          items: [],
-        ),
+        // bottomNavigationBar: BottomNavigationBar(
+        //   items: [],
+        // ),
       ),
     );
   }
