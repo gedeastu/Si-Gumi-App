@@ -11,6 +11,10 @@ class AnnouncementHome extends StatelessWidget {
       width: 380,
       padding: EdgeInsets.only(left: 20),
       decoration: BoxDecoration(
+        border: Border.all(
+          color: Colors.black26,
+          width: 1
+        ),
         borderRadius: BorderRadius.circular(20),
         color: Color.fromARGB(255, 234, 242, 253)
       ),

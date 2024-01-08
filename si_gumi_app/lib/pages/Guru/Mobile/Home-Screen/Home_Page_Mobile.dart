@@ -3,6 +3,8 @@ import 'package:si_gumi_app/components/Guru/Home-Components/Announcement-Home.da
 import 'package:si_gumi_app/components/Guru/Home-Components/AppBar-Home.dart';
 //import 'package:si_gumi_app/components/Guru/Home-Components/Banner-Home.dart';
 import 'package:si_gumi_app/components/Guru/Home-Components/Carousel-Home.dart';
+import 'package:si_gumi_app/components/Guru/Home-Components/KerajinanDariSampah.dart';
+import 'package:si_gumi_app/components/Guru/Home-Components/PapanPeringkat-Home.dart';
 //import 'package:cached_network_image/cached_network_image.dart';
 
 class HomePageMobile extends StatelessWidget {
@@ -22,16 +24,21 @@ class HomePageMobile extends StatelessWidget {
       ),
       backgroundColor: Colors.white,
       body: SafeArea(
-        child: Container(
-          width: double.infinity,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              CarouselHome(),
-              //BannerHome()
-              SizedBox(height: 20,),
-              AnnouncementHome()
-            ],
+        child: SingleChildScrollView(
+          child: Container(
+            width: double.infinity,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                CarouselHome(),
+                //BannerHome()
+                SizedBox(height: 20,),
+                AnnouncementHome(),
+                SizedBox(height: 20,),
+                PapanPeringkatHome(),
+                KerajinanDariSampahHome()
+              ],
+            ),
           ),
         )
       ),

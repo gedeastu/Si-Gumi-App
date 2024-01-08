@@ -45,7 +45,7 @@ class _CarouselHomeState extends State<CarouselHome> {
             )
           ),
         ),
-        SizedBox(height: 12,),
+        SizedBox(height: 3,),
         indicator_smooth()
       ],
     );
@@ -123,18 +123,18 @@ class _CarouselHomeState extends State<CarouselHome> {
     margin: EdgeInsets.all(10),
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(20),
-      boxShadow: [
-        BoxShadow(
-          color: Colors.grey.withOpacity(0.3),
-          spreadRadius: 3,
-          blurRadius: 5,
-          offset: Offset(0, 1), // changes position of shadow
-        ),
-      ],
+      // boxShadow: [
+      //   BoxShadow(
+      //     color: Colors.grey.withOpacity(0.3),
+      //     spreadRadius: 3,
+      //     blurRadius: 5,
+      //     offset: Offset(0, 1), // changes position of shadow
+      //   ),
+      // ],
     ),
     child: ClipRRect(
       borderRadius: BorderRadius.circular(20),
-      child: Image.asset(assetsImages,fit: BoxFit.cover,)
+      child: Image.asset(assetsImages,fit: BoxFit.cover,width: double.infinity,)
     ),
   );
   }
