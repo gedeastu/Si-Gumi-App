@@ -140,11 +140,11 @@ class _CarouselHomeState extends State<CarouselHome> {
   }
 
   Widget indicator_smooth()=>AnimatedSmoothIndicator(
-    onDotClicked: (index) {
-      setState(() {
-        activeIndex = index;
-      });
-    },
+    // onDotClicked: (index) {
+    //   setState(() {
+    //     activeIndex = index;
+    //   });
+    // },
     effect: ExpandingDotsEffect(dotWidth: 8,dotHeight: 8,activeDotColor: Color.fromARGB(255, 59, 50, 121)),
     activeIndex: activeIndex, 
     count: AssetsImages.length,
