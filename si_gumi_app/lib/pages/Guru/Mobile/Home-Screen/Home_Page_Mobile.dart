@@ -9,7 +9,6 @@ import 'package:si_gumi_app/components/Guru/Home-Components/PapanPeringkat-Home.
 
 class HomePageMobile extends StatelessWidget {
   const HomePageMobile({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

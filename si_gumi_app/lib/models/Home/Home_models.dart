@@ -1,4 +1,6 @@
 
+import 'package:get/get.dart';
+
 class Banner{
   final String Gambar1;
   final String Gambar2;
@@ -11,4 +13,8 @@ class Banner{
     required this.Gambar3,
     required this.Gambar4,
   });
+}
+
+class Announcement{
+  var isTapped = false.obs;
 }
