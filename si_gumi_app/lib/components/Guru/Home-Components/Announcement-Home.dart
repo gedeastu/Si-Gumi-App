@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+// import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:si_gumi_app/controllers/Home/announcement_controller.dart';
+//import 'package:si_gumi_app/controllers/Home/announcement_controller.dart';
 
 class AnnouncementHome extends StatelessWidget {
   AnnouncementHome({super.key});
-  final controller = Get.put(AnnouncementController());
+  //final controller = Get.put(AnnouncementController());
   @override
   Widget build(BuildContext context) {
-    return Obx(() => ClipRRect(
+    return ClipRRect(
       borderRadius: BorderRadius.circular(20),
       child: Material(
         child: InkWell(
+          // highlightColor: Color.fromARGB(255, 234, 242, 253).withOpacity(0.3),
+          // splashColor: Color.fromARGB(255, 234, 242, 253).withOpacity(0.3),
           onTap: (){},
           child: Ink(
             height: 100,
@@ -125,6 +127,6 @@ class AnnouncementHome extends StatelessWidget {
           ),
         ),
       ),
-    )); 
+    ); 
   }
 }

@@ -1,4 +1,5 @@
 
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class Banner{
@@ -17,4 +18,15 @@ class Banner{
 
 class Announcement{
   var isTapped = false.obs;
+}
+
+class KerajinanDariSampah{
+  final String img;
+  final String name;
+  final Color color_argb;
+  KerajinanDariSampah({
+    required this.img,
+    required this.name,
+    required this.color_argb
+  });
 }

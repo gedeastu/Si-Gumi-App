@@ -80,6 +80,9 @@ flutter:
     - assets/images/crown_svg.svg
     - assets/images/crown.png
     - assets/images/sampahPlastik.png
+    - assets/images/sampahKertas.png
+    - assets/images/lainnya.png
+    - assets/images/bg_card_kerajinan.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
