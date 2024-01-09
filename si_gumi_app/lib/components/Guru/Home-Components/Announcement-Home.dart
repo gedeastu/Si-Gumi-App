@@ -12,8 +12,8 @@ class AnnouncementHome extends StatelessWidget {
       borderRadius: BorderRadius.circular(20),
       child: Material(
         child: InkWell(
-          // highlightColor: Color.fromARGB(255, 234, 242, 253).withOpacity(0.3),
-          // splashColor: Color.fromARGB(255, 234, 242, 253).withOpacity(0.3),
+          highlightColor: Color.fromARGB(255, 36, 59, 118).withOpacity(0.3),
+          splashColor: Color.fromARGB(255, 36, 59, 118).withOpacity(0.3),
           onTap: (){},
           child: Ink(
             height: 100,
