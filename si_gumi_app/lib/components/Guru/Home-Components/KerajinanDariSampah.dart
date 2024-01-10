@@ -38,7 +38,7 @@ class KerajinanDariSampahHome extends StatelessWidget {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           border: Border.all(color: Color.fromARGB(255, 36, 59, 118)),
-                          image: DecorationImage(image: AssetImage("assets/images/bg_card_kerajinan.png"),fit: BoxFit.cover)
+                          image: DecorationImage(image: AssetImage("${controller.kerajinanDariSampah[index].bg_card}"),fit: BoxFit.cover)
                         ),
                         width: 117,
                         height: 110,

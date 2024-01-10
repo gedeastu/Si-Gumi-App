@@ -24,7 +24,9 @@ class KerajinanDariSampah{
   final String img;
   final String name;
   final Color color_argb;
+  final String bg_card;
   KerajinanDariSampah({
+    required this.bg_card,
     required this.img,
     required this.name,
     required this.color_argb
