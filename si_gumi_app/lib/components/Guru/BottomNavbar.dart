@@ -10,25 +10,19 @@ class BottomNavbar extends StatelessWidget {
     return Obx(() => Container(
       height: 80,
       decoration: BoxDecoration(
-      boxShadow: [
-      BoxShadow(
-        color: Colors.grey.withOpacity(0.5), // Color of the shadow
-        spreadRadius: 5, // Spread radius
-        blurRadius: 7, // Blur radius
-        offset: Offset(0, 3), // Offset of the shadow
-        ),
-        ],
-        borderRadius: BorderRadius.circular(20)
+        color: Colors.white,
+        border: Border.symmetric(vertical: BorderSide(color: Colors.black12,width: 2))
       ),
       child: 
       NavigationBar(
+        backgroundColor: Colors.white,
         selectedIndex: controller.selectedIndex.value,
         onDestinationSelected: controller.onNavigateTapped,
         destinations: [
           NavigationDestination(icon: Icon(Icons.home), label: "Home"),
           NavigationDestination(icon: Icon(Icons.qr_code_scanner), label: "Scanner"),
-          NavigationDestination(icon: Icon(Icons.home), label: "Penghargaan"),
-          NavigationDestination(icon: Icon(Icons.home), label: "Profile")
+          NavigationDestination(icon: Icon(Icons.leaderboard), label: "Penghargaan"),
+          NavigationDestination(icon: Icon(Icons.account_circle), label: "Profile")
         ],
       )
       // BottomNavigationBar(
