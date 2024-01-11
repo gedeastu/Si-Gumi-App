@@ -45,7 +45,7 @@ class _CarouselHomeState extends State<CarouselHome> {
             )
           ),
         ),
-        SizedBox(height: 3,),
+        const SizedBox(height: 3,),
         indicator_smooth()
       ],
     );
@@ -120,7 +120,7 @@ class _CarouselHomeState extends State<CarouselHome> {
   Widget images(String assetsImages,int index){
   return Container(
     width: 380,
-    margin: EdgeInsets.all(10),
+    margin: const EdgeInsets.all(10),
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(20),
       // boxShadow: [
@@ -145,7 +145,7 @@ class _CarouselHomeState extends State<CarouselHome> {
     //     activeIndex = index;
     //   });
     // },
-    effect: ExpandingDotsEffect(dotWidth: 8,dotHeight: 8,activeDotColor: Color.fromARGB(255, 59, 50, 121)),
+    effect: const ExpandingDotsEffect(dotWidth: 8,dotHeight: 8,activeDotColor: Color.fromARGB(255, 59, 50, 121)),
     activeIndex: activeIndex, 
     count: AssetsImages.length,
   );

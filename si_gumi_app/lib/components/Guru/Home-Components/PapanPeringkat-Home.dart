@@ -10,7 +10,7 @@ class PapanPeringkatHome extends StatelessWidget {
     return Column(
       children: [
         Container(
-          padding: EdgeInsets.only(left: 25),
+          padding: const EdgeInsets.only(left: 25),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -18,7 +18,7 @@ class PapanPeringkatHome extends StatelessWidget {
               TextButton(
               onPressed: (){}, 
               style: ButtonStyle(overlayColor: MaterialStateColor.resolveWith((states) => Colors.transparent)),
-              child: Row(
+              child: const Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text("Selengkapnya"),
@@ -29,7 +29,7 @@ class PapanPeringkatHome extends StatelessWidget {
           ),
         ),
         Container(
-          margin: EdgeInsets.symmetric(horizontal:20),
+          margin: const EdgeInsets.symmetric(horizontal:20),
           height: 280,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
@@ -38,7 +38,7 @@ class PapanPeringkatHome extends StatelessWidget {
               width: 1
             )
           ),
-          child: Container(
+          child: SizedBox(
             height: double.infinity,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -53,7 +53,7 @@ class PapanPeringkatHome extends StatelessWidget {
                           Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(100),
-                              border: Border.all(color: Color.fromARGB(255, 107, 72, 151),width: 2)
+                              border: Border.all(color: const Color.fromARGB(255, 107, 72, 151),width: 2)
                             ),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(100),
@@ -63,19 +63,19 @@ class PapanPeringkatHome extends StatelessWidget {
                           Text("Cipungpung",style: GoogleFonts.poppins(
                             fontWeight: FontWeight.w600
                           ),),
-                          SizedBox(height: 2,),
+                          const SizedBox(height: 2,),
                           Row(
                             children: [
                               SvgPicture.asset("assets/images/circle_star.svg",width: 20,height: 20,),
-                              SizedBox(width: 3,),
+                              const SizedBox(width: 3,),
                               Text("12000",style: GoogleFonts.poppins(
                                 fontWeight: FontWeight.w500,
-                                color: Color.fromARGB(255, 119, 119, 119),
+                                color: const Color.fromARGB(255, 119, 119, 119),
                                 fontSize: 13
                               ),)
                             ],
                           ),
-                          SizedBox(height: 2,),
+                          const SizedBox(height: 2,),
                         ],
                       ),
                     ),
@@ -94,7 +94,7 @@ class PapanPeringkatHome extends StatelessWidget {
                           Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(100),
-                              border: Border.all(color: Color.fromARGB(255, 107, 72, 151),width: 2)
+                              border: Border.all(color: const Color.fromARGB(255, 107, 72, 151),width: 2)
                             ),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(100),
@@ -104,19 +104,19 @@ class PapanPeringkatHome extends StatelessWidget {
                           Text("Cipungpung",style: GoogleFonts.poppins(
                             fontWeight: FontWeight.w600
                           ),),
-                          SizedBox(height: 2,),
+                          const SizedBox(height: 2,),
                           Row(
                             children: [
                               SvgPicture.asset("assets/images/circle_star.svg",width: 20,height: 20,),
-                              SizedBox(width: 3,),
+                              const SizedBox(width: 3,),
                               Text("12000",style: GoogleFonts.poppins(
                                 fontWeight: FontWeight.w500,
-                                color: Color.fromARGB(255, 119, 119, 119),
+                                color: const Color.fromARGB(255, 119, 119, 119),
                                 fontSize: 13
                               ),)
                             ],
                           ),
-                          SizedBox(height: 2,),
+                          const SizedBox(height: 2,),
                         ],
                       ),
                     ),
@@ -133,7 +133,7 @@ class PapanPeringkatHome extends StatelessWidget {
                           Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(100),
-                              border: Border.all(color: Color.fromARGB(255, 107, 72, 151),width: 2)
+                              border: Border.all(color: const Color.fromARGB(255, 107, 72, 151),width: 2)
                             ),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(100),
@@ -143,19 +143,19 @@ class PapanPeringkatHome extends StatelessWidget {
                           Text("Cipungpung",style: GoogleFonts.poppins(
                             fontWeight: FontWeight.w600
                           ),),
-                          SizedBox(height: 2,),
+                          const SizedBox(height: 2,),
                           Row(
                             children: [
                               SvgPicture.asset("assets/images/circle_star.svg",width: 20,height: 20,),
-                              SizedBox(width: 3,),
+                              const SizedBox(width: 3,),
                               Text("12000",style: GoogleFonts.poppins(
                                 fontWeight: FontWeight.w500,
-                                color: Color.fromARGB(255, 119, 119, 119),
+                                color: const Color.fromARGB(255, 119, 119, 119),
                                 fontSize: 13
                               ),)
                             ],
                           ),
-                          SizedBox(height: 2,),
+                          const SizedBox(height: 2,),
                         ],
                       ),
                     ),

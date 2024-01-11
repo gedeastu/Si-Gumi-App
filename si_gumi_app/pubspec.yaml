@@ -86,6 +86,7 @@ flutter:
     - assets/images/bg_card_kerajinan.png
     - assets/images/bg_card_kerajinan_2.png
     - assets/images/bg_card_kerajinan_3.png
+    - assets/images/placholderImageSearch.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -12,7 +12,7 @@ class HomePageMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
+      appBar: const PreferredSize(
         preferredSize: Size.fromHeight(100),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -24,17 +24,17 @@ class HomePageMobile extends StatelessWidget {
       backgroundColor: Colors.white,
       body: SafeArea(
         child: SingleChildScrollView(
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                CarouselHome(),
+                const CarouselHome(),
                 //BannerHome()
-                SizedBox(height: 20,),
-                AnnouncementHome(),
-                SizedBox(height: 20,),
-                PapanPeringkatHome(),
+                const SizedBox(height: 20,),
+                const AnnouncementHome(),
+                const SizedBox(height: 20,),
+                const PapanPeringkatHome(),
                 KerajinanDariSampahHome()
               ],
             ),

@@ -10,7 +10,7 @@ class AppBarHome extends StatelessWidget {
       toolbarHeight: 100,
       backgroundColor: Colors.transparent,
       leading: Container(
-        padding: EdgeInsets.only(left: 20),
+        padding: const EdgeInsets.only(left: 20),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
@@ -19,7 +19,7 @@ class AppBarHome extends StatelessWidget {
                 width: 60,
                 height: 60,
                 decoration: BoxDecoration(
-                  border: Border.all(color: Color.fromARGB(255, 59, 50, 121),width: 3),
+                  border: Border.all(color: const Color.fromARGB(255, 59, 50, 121),width: 3),
                   borderRadius: BorderRadius.circular(100)
                 ),
                 child: ClipRRect(
@@ -28,7 +28,7 @@ class AppBarHome extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(width: 10,),
+            const SizedBox(width: 10,),
             Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
@@ -37,7 +37,7 @@ class AppBarHome extends StatelessWidget {
                 fontSize: 13,
                 fontWeight: FontWeight.w500
               ),),
-              SizedBox(height: 2,),
+              const SizedBox(height: 2,),
               Text("Dwi Widiyanti",style: GoogleFonts.poppins(
                 fontSize: 17,
                 fontWeight: FontWeight.w600

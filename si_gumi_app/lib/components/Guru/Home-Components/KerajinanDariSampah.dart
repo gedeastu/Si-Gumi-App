@@ -10,7 +10,7 @@ class KerajinanDariSampahHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.centerLeft,
-      padding: EdgeInsets.all(20),
+      padding: const EdgeInsets.all(20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -20,10 +20,10 @@ class KerajinanDariSampahHome extends StatelessWidget {
           ),),
           Container(
             height: 150,
-            margin: EdgeInsets.symmetric(vertical: 15),
+            margin: const EdgeInsets.symmetric(vertical: 15),
             child: ListView.separated(
               scrollDirection: Axis.horizontal,
-              physics: NeverScrollableScrollPhysics(),
+              physics: const NeverScrollableScrollPhysics(),
               itemBuilder: (BuildContext context, int index) {
                 return ClipRRect(
                   borderRadius: BorderRadius.circular(20),
@@ -37,8 +37,8 @@ class KerajinanDariSampahHome extends StatelessWidget {
                       child: Ink(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
-                          border: Border.all(color: Color.fromARGB(255, 36, 59, 118)),
-                          image: DecorationImage(image: AssetImage("${controller.kerajinanDariSampah[index].bg_card}"),fit: BoxFit.cover)
+                          border: Border.all(color: const Color.fromARGB(255, 36, 59, 118)),
+                          image: DecorationImage(image: AssetImage(controller.kerajinanDariSampah[index].bg_card),fit: BoxFit.cover)
                         ),
                         width: 117,
                         height: 110,
@@ -47,8 +47,8 @@ class KerajinanDariSampahHome extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Image.asset(controller.kerajinanDariSampah[index].img,width: 80,height: 80,),
-                            SizedBox(height: 3,),
-                            SizedBox(width: 57,child: Text(controller.kerajinanDariSampah[index].name,textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),))
+                            const SizedBox(height: 3,),
+                            SizedBox(width: 57,child: Text(controller.kerajinanDariSampah[index].name,textAlign: TextAlign.center,style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 15),))
                           ],
                         ),
                       ),
@@ -57,7 +57,7 @@ class KerajinanDariSampahHome extends StatelessWidget {
                 );
               }, 
               separatorBuilder: (BuildContext context, int index) {
-                return SizedBox(width: 10,);
+                return const SizedBox(width: 10,);
               }, 
               itemCount: controller.kerajinanDariSampah.length
             ),

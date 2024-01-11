@@ -9,7 +9,7 @@ class BottomNavbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Obx(() => Container(
       height: 80,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: Colors.white,
         border: Border.symmetric(vertical: BorderSide(color: Colors.black12,width: 2))
       ),
@@ -18,7 +18,7 @@ class BottomNavbar extends StatelessWidget {
         backgroundColor: Colors.white,
         selectedIndex: controller.selectedIndex.value,
         onDestinationSelected: controller.onNavigateTapped,
-        destinations: [
+        destinations: const [
           NavigationDestination(icon: Icon(Icons.home), label: "Home"),
           NavigationDestination(icon: Icon(Icons.qr_code_scanner), label: "Scanner"),
           NavigationDestination(icon: Icon(Icons.leaderboard), label: "Penghargaan"),
