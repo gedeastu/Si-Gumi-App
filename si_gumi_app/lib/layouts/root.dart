@@ -8,7 +8,7 @@ class Root extends StatelessWidget {
   Root({super.key});
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         extendBody: true,

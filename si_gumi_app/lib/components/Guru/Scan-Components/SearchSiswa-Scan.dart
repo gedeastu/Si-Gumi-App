@@ -14,6 +14,46 @@ class SearchSiswa extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        // TextField(
+        //   onChanged: (value) {
+        //     Get.find<SearchSiswaController>().setSearchValue(value);
+        //   },
+        //   decoration: InputDecoration(
+        //         suffixIcon: IconButton(onPressed: (){
+        
+        //         }, icon: Icon(Icons.search)),
+        //         hintStyle: GoogleFonts.poppins(),
+        //         contentPadding: EdgeInsets.symmetric(vertical: 15,horizontal: 20),
+        //         enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(20),borderSide: BorderSide(color: Color.fromARGB(255, 190, 242, 235),width: 1)),
+        //         focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(20),borderSide: BorderSide(color: Color.fromARGB(255, 79, 170, 253))),
+        //         hintText: "Cari nama siswa"
+        //   ),
+        // ),
+        // SizedBox(height: 16,),
+        // Container(
+        //   child: Expanded(
+        //     child: Obx((){
+        //       final controller = Get.find<SearchSiswaController>().getFilteredStudents();
+        //       return ListView.separated(
+        //         scrollDirection: Axis.vertical,
+        //         itemBuilder: (context, index) {
+        //           final student = controller[index];
+        //           return ListTile(
+        //             title: Text(student.name),
+        //             onTap: () {
+        //               final onTapController = Get.find<SearchSiswaController>();
+        //               onTapController.setSearchValue(student.name);
+        //               FocusScope.of(context).unfocus();
+        //             },
+        //           );
+        //         }, 
+        //         separatorBuilder: (context, index) {
+        //           return Divider();
+        //         }, 
+        //         itemCount: controller.length);
+        //     })
+        //   ),
+        // )
         Autocomplete<searchResult>(
           optionsBuilder:(textEditingValue) {
             if (textEditingValue.text.isEmpty) {
@@ -26,7 +66,7 @@ class SearchSiswa extends StatelessWidget {
             return TextField(
               controller: textEditingController,
               focusNode: focusNode,
-              onEditingComplete: onFieldSubmitted,
+              onEditingComplete:  onFieldSubmitted,
               decoration: InputDecoration(
                 suffixIcon: IconButton(onPressed: (){
         
@@ -42,6 +82,7 @@ class SearchSiswa extends StatelessWidget {
           optionsViewBuilder: (context, onSelected, options) {
             return ListView.separated(
               scrollDirection: Axis.vertical,
+              padding: EdgeInsets.symmetric(vertical: 20),
               itemBuilder: (BuildContext context, int index) {
                 final option = options.elementAt(index);
                 return Material(
