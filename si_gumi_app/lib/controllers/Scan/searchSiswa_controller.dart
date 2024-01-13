@@ -12,10 +12,16 @@ class SearchSiswaController extends GetxController{
     searchValue.value = value; 
   }
 
-  final List<searchResult> dataSiswa = List.generate(10, (index) => searchResult(name:Faker().person.name()));
+  final List<searchResult> dataSiswa = List.generate(20, (index) => searchResult(name:Faker().person.name(),condition: RxBool(false)));
 
   List<searchResult> getFilteredStudents(){
     final query = searchValue.toLowerCase();
     return dataSiswa.where((siswa) => siswa.name.toLowerCase().contains(query)).toList();
   }
+
+  void setCondition(int index){
+    dataSiswa[index].condition.value = !dataSiswa[index].condition.value;
+    update();
+  }
+
 }

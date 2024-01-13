@@ -38,8 +38,36 @@ class SearchSiswa extends StatelessWidget {
               scrollDirection: Axis.vertical,
               itemBuilder: (context, index) {
                 final student = controller[index];
-                return ListTile(
-                  title: Text(student.name),
+                return Container(
+                  padding: EdgeInsets.symmetric(horizontal: 15),
+                  height: 50,
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(student.name),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Container(
+                            height: 30,
+                            width: 85,
+                            child: ElevatedButton(onPressed: () {
+                              Get.find<SearchSiswaController>().setCondition(index);
+                            }, child: Text("Detail",)),
+                          ),
+                          SizedBox(width: 5,),
+                          Container(
+                            height: 30,
+                            width: 80,
+                            child: ElevatedButton(onPressed: () {
+                              Get.find<SearchSiswaController>().setCondition(index);
+                            }, child: Text("Scan")),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
                   // onTap: () {
                   //   final onTapController = Get.find<SearchSiswaController>();
                   //   onTapController.setSearchValue(student.name);
