@@ -12,7 +12,7 @@ class SearchSiswaController extends GetxController{
     searchValue.value = value; 
   }
 
-  final List<searchResult> dataSiswa = List.generate(5, (index) => searchResult(name:Faker().person.name()));
+  final List<searchResult> dataSiswa = List.generate(10, (index) => searchResult(name:Faker().person.name()));
 
   List<searchResult> getFilteredStudents(){
     final query = searchValue.toLowerCase();
