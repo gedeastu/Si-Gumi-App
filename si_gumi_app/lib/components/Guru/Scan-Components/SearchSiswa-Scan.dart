@@ -5,6 +5,9 @@ import 'package:google_fonts/google_fonts.dart';
 // import 'package:google_fonts/google_fonts.dart';
 // import 'package:flutter_typeahead/flutter_typeahead.dart';
 import 'package:si_gumi_app/controllers/Scan/SearchSiswa_controller.dart';
+import 'package:si_gumi_app/pages/Guru/Mobile/Scan-Screen/Camera_Page.dart';
+//import 'package:si_gumi_app/pages/Guru/Mobile/Scan-Screen/Camera_Page.dart';
+// import 'package:si_gumi_app/routes/route_name.dart';
 // import 'package:si_gumi_app/models/Scan/searchResult_model.dart';
 
 class SearchSiswa extends StatelessWidget {
@@ -79,10 +82,12 @@ class SearchSiswa extends StatelessWidget {
                           Container(
                             height: 30,
                             width: 80,
-                            child: ElevatedButton(
-                            onPressed: () {
-                              
-                            }, child: Text("Scan")),
+                            child: GestureDetector(
+                              onTap: () {
+                                Get.to(CameraPageMobile());
+                              },
+                              child: Text("Scan")
+                            ),
                           ),
                         ],
                       )
