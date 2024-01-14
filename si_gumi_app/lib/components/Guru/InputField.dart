@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_typing_uninitialized_variables
+
 import 'package:flutter/material.dart';
 
 class InputField extends StatelessWidget {
@@ -39,7 +41,7 @@ class InputField extends StatelessWidget {
       borderRadius: BorderRadius.circular(80),
       child: Material(
         child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 25,vertical: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 25,vertical: 10),
           height: 80,
           decoration: BoxDecoration(
             color: color,
@@ -58,7 +60,7 @@ class InputField extends StatelessWidget {
                 fontWeight: FontWeight.normal,
                 fontSize: 15.0
               ),
-              prefixIcon: Icon(Icons.search),
+              prefixIcon: const Icon(Icons.search),
               enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: borderSide)),
               focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: focusedBorder),borderRadius: BorderRadius.circular(50))
             ),

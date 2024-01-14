@@ -19,7 +19,7 @@ class _SearchPageState extends State<SearchPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Search Example'),
+        title: const Text('Search Example'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -31,7 +31,7 @@ class _SearchPageState extends State<SearchPage> {
               decoration: InputDecoration(
                 labelText: 'Search',
                 suffixIcon: IconButton(
-                  icon: Icon(Icons.clear),
+                  icon: const Icon(Icons.clear),
                   onPressed: () {
                     _searchController.clear();
                     setState(() {
@@ -46,11 +46,11 @@ class _SearchPageState extends State<SearchPage> {
                 });
               },
             ),
-            SizedBox(height: 16.0),
+            const SizedBox(height: 16.0),
             DropdownButton<String>(
               isExpanded: true,
               value: _selectedResult,
-              hint: Text('Select a result'),
+              hint: const Text('Select a result'),
               onChanged: (String? newValue) {
                 setState(() {
                   _selectedResult = newValue!;

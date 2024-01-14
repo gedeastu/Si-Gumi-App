@@ -28,7 +28,7 @@ class ScanPageMobile extends StatelessWidget {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Container(
-            padding: EdgeInsets.only(left: 20,right: 20,top: 40),
+            padding: const EdgeInsets.only(left: 20,right: 20,top: 40),
             width: double.infinity,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,

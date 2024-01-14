@@ -6,8 +6,8 @@ import 'package:si_gumi_app/routes/route_name.dart';
 
 class AppRoute{
   static final pages = [
-    GetPage(name: RouteName.home_page_guru, page: () => HomeLayout(),),
-    GetPage(name: RouteName.scan_page_guru, page: () => ScanLayout(),),
-    GetPage(name: RouteName.camera_page_guru, page: () => CameraPageMobile(),)
+    GetPage(name: RouteName.home_page_guru, page: () => const HomeLayout(),),
+    GetPage(name: RouteName.scan_page_guru, page: () => const ScanLayout(),),
+    GetPage(name: RouteName.camera_page_guru, page: () => const CameraPageMobile(),)
   ];
 }
