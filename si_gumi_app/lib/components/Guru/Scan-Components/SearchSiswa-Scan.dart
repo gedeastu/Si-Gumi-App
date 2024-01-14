@@ -52,7 +52,26 @@ class SearchSiswa extends StatelessWidget {
                           Container(
                             height: 30,
                             width: 85,
-                            child: ElevatedButton(onPressed: () {
+                            child: ElevatedButton(
+                            style: ButtonStyle(
+                            foregroundColor: MaterialStateProperty.resolveWith<Color>(
+                              (Set<MaterialState> states) {
+                                if (states.contains(MaterialState.pressed)) {
+                                  return Color.fromARGB(255, 245, 245, 245);
+                                } else {
+                                  return Color.fromARGB(255, 71, 71, 71);
+                                }
+                              }),
+                            backgroundColor: MaterialStateProperty.resolveWith<Color>(
+                              (Set<MaterialState> states){
+                                if (states.contains(MaterialState.pressed)) {
+                                  return Color.fromARGB(255, 58, 145, 170);
+                                } else {
+                                  return Color.fromARGB(255, 234, 242,253);
+                                }
+                            })
+                            ),
+                            onPressed: () {
                               Get.find<SearchSiswaController>().setCondition(index);
                             }, child: Text("Detail",)),
                           ),
@@ -60,8 +79,9 @@ class SearchSiswa extends StatelessWidget {
                           Container(
                             height: 30,
                             width: 80,
-                            child: ElevatedButton(onPressed: () {
-                              Get.find<SearchSiswaController>().setCondition(index);
+                            child: ElevatedButton(
+                            onPressed: () {
+                              
                             }, child: Text("Scan")),
                           ),
                         ],
