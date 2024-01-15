@@ -4,6 +4,7 @@ import 'package:si_gumi_app/components/Guru/Scan-Components/SearchSiswa-Scan.dar
 // import 'package:si_gumi_app/components/Guru/InputField.dart';
 
 class ScanPageMobile extends StatelessWidget {
+  
   const ScanPageMobile({super.key});
 
   @override
