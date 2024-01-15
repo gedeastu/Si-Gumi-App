@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 
 class SearchPage extends StatefulWidget {
+  const SearchPage({super.key});
+
   @override
   _SearchPageState createState() => _SearchPageState();
 }
 
 class _SearchPageState extends State<SearchPage> {
   String _selectedResult = '';
-  TextEditingController _searchController = TextEditingController();
-  List<String> _searchResults = [
+  final TextEditingController _searchController = TextEditingController();
+  final List<String> _searchResults = [
     'Result 1',
     'Result 2',
     'Result 3',

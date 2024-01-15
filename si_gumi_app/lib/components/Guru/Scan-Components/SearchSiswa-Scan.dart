@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:image_picker/image_picker.dart';
 // import 'package:image_picker/image_picker.dart';
 import 'package:si_gumi_app/controllers/Scan/SearchSiswa_controller.dart';
 import 'package:si_gumi_app/controllers/Scan/camera_controller.dart';
+import 'package:si_gumi_app/pages/Guru/Mobile/Scan-Screen/Camera_Page.dart';
 // import 'package:si_gumi_app/pages/Guru/Mobile/Scan-Screen/Camera_Page.dart';
 
 class SearchSiswa extends StatelessWidget {
@@ -31,7 +31,7 @@ class SearchSiswa extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 16,),
-        Container(
+        SizedBox(
           height: 1000,
           child: Obx((){
             final controller = Get.find<SearchSiswaController>().getFilteredStudents();
@@ -50,7 +50,7 @@ class SearchSiswa extends StatelessWidget {
                       Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Container(
+                          SizedBox(
                             height: 30,
                             width: 85,
                             child: ElevatedButton(
@@ -77,12 +77,13 @@ class SearchSiswa extends StatelessWidget {
                             }, child: const Text("Detail",)),
                           ),
                           const SizedBox(width: 5,),
-                          Container(
+                          SizedBox(
                             height: 30,
                             width: 80,
                             child: ElevatedButton(
                             onPressed: (){
-                              controllerCamera.getImage(ImageSource.camera);
+                              Get.to(const CameraPageMobile());
+                              //controllerCamera.getImage(ImageSource.camera);
                             }, child: const Text("Scan")),
                           ),
                         ],
