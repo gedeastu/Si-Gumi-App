@@ -3,8 +3,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class BigThree extends StatelessWidget {
-  const BigThree({super.key});
-
+  BigThree({super.key});
+  // final controller = Get.find<SurpriseController>();
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -105,7 +105,7 @@ class BigThree extends StatelessWidget {
                       child: Column(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                                            GestureDetector(
+                      GestureDetector(
                           child: Column(
                             children: [
                               Container(
@@ -146,7 +146,14 @@ class BigThree extends StatelessWidget {
               // Center(
               //   child: Text("Leaderboards"),
               // ),
-            )
+            ),
+            // Obx(() => controller.isShowingConfetti.value ? ConfettiWidget(confettiController: ConfettiController(
+            //   duration: Duration(seconds: 5)),
+            //   blastDirectionality: BlastDirectionality.explosive,
+            //   numberOfParticles: 25,
+            //   shouldLoop: false,
+            // ) : SizedBox()
+            // )
             ],
           )
         );

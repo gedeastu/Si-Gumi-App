@@ -114,7 +114,12 @@ class _PenghargaanPageMobileState extends State<PenghargaanPageMobile> with Sing
                       TableLeaderboard()
                     ],
                   ),
-                  Center(child: Text('Tab 2 content')),
+                  Column(
+                    children: [
+                      BigThree(),
+                      TableLeaderboard()
+                    ],
+                  ),
                 ],
               )
               // Obx(

@@ -21,7 +21,7 @@ class BottomNavbar extends StatelessWidget {
         destinations: const [
           NavigationDestination(icon: Icon(Icons.home), label: "Home"),
           NavigationDestination(icon: Icon(Icons.qr_code_scanner), label: "Scanner"),
-          NavigationDestination(icon: Icon(Icons.leaderboard), label: "Penghargaan"),
+          NavigationDestination(icon: Icon(Icons.leaderboard), label: "Penghargaan",),
           NavigationDestination(icon: Icon(Icons.account_circle), label: "Profile")
         ],
       )
