@@ -46,7 +46,10 @@ class SearchSiswa extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(student.name),
+                      Container(
+                        width: 170,
+                        child: Text(limitCharacters(student.name, 20))
+                      ),
                       Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
@@ -168,5 +171,12 @@ class SearchSiswa extends StatelessWidget {
       ],
     );
 
+  }
+   String limitCharacters(String text, int limit) {
+    if (text.length > limit) {
+      return text.substring(0, limit) + '..';
+    } else {
+      return text;
+    }
   }
 }

@@ -37,20 +37,20 @@ class ScanPageMobile extends StatelessWidget {
               children: [
                 SearchSiswa(),
                 // InputField(obscureText: false, borderSide: Color.fromARGB(255, 190, 242, 235), focusedBorder: Colors.blue,color: Color.fromARGB(255, 255, 255, 255), width: 200, height: 30, icon: Icon(Icons.search), rounded: 80, hintText: "Cari nama siswa", inputType: TextInputType.text, controller:TextEditingController() , borderRadius: BorderRadius.circular(80), colorTextField: Color.fromARGB(255, 119, 119, 119), colorHintTextStyle: Color.fromARGB(255, 119, 119, 119)),
-                const SizedBox(height: 90,),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Image.asset("assets/images/placholderImageSearch.png"),
-                    SizedBox(
-                      width: 350,
-                      child: Text("Pilih data siswa dan kumpulkan sampah sebanyak-banyaknya",textAlign: TextAlign.center,style: GoogleFonts.poppins(
-                        fontWeight: FontWeight.normal,
-                        fontSize: 14
-                      ),)
-                    ),
-                  ],
-                ),
+                // const SizedBox(height: 90,),
+                // Column(
+                //   mainAxisAlignment: MainAxisAlignment.center,
+                //   children: [
+                //     Image.asset("assets/images/placholderImageSearch.png"),
+                //     SizedBox(
+                //       width: 350,
+                //       child: Text("Pilih data siswa dan kumpulkan sampah sebanyak-banyaknya",textAlign: TextAlign.center,style: GoogleFonts.poppins(
+                //         fontWeight: FontWeight.normal,
+                //         fontSize: 14
+                //       ),)
+                //     ),
+                //   ],
+                // ),
                 
               ],
             ),
