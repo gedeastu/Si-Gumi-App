@@ -11,6 +11,7 @@ class Auth extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       home:AnimatedSplashScreen(
+          splashTransition: SplashTransition.fadeTransition,
           splashIconSize: 200,
           backgroundColor: Color.fromARGB(255, 58, 145, 170),
           splash: Center(
