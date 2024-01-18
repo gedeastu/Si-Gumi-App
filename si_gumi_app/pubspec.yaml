@@ -46,7 +46,14 @@ dependencies:
   faker: ^2.0.1
   image_picker: ^1.0.7
   confetti: ^0.7.0
+  flutter_native_splash: ^2.3.9
 
+flutter_native_splash:
+  android: true
+  ios: true
+  web: true
+  image: "assets/images/logo.png"
+  background_image: "assets/images/bg_splash_screen.jpg"
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -96,7 +103,8 @@ flutter:
     - assets/images/player2.png
     - assets/images/player3.png
     - assets/images/player4.png
-
+    - assets/images/logo.png
+    - assets/images/bg_splash_screen.jpg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

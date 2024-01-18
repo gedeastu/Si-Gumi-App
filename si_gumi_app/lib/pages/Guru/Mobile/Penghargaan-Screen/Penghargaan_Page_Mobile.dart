@@ -7,7 +7,7 @@ import 'package:si_gumi_app/components/Guru/Penghargaan-Components/Leaderboard-P
 
 class PenghargaanPageMobile extends StatefulWidget {
   // final TabBarController controller = Get.put(TabBarController());
-  PenghargaanPageMobile({super.key});
+  const PenghargaanPageMobile({super.key});
 
   @override
   State<PenghargaanPageMobile> createState() => _PenghargaanPageMobileState();
@@ -55,7 +55,7 @@ class _PenghargaanPageMobileState extends State<PenghargaanPageMobile> with Sing
           children: [
             Container(
               height: 47,
-              margin: EdgeInsets.symmetric(vertical: 20,horizontal: 30),
+              margin: const EdgeInsets.symmetric(vertical: 20,horizontal: 30),
               //padding: EdgeInsets.symmetric(vertical: 3,horizontal: 3),
               decoration: BoxDecoration(
                 border: Border.all(

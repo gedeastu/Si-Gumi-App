@@ -23,7 +23,7 @@ class SecondAnimationStatisticController extends GetxController{
   }
 
   void _startTimer(){
-    _timer = Timer.periodic(Duration(seconds: 1), (timer) { 
+    _timer = Timer.periodic(const Duration(seconds: 1), (timer) { 
       containerHeight.value = isGrowing ? 121.5 : 0.0;
       isGrowing = !isGrowing;
     });
@@ -51,7 +51,7 @@ class FirstAnimationStatisticController extends GetxController{
   }
 
   void _startTimer(){
-    _timer = Timer.periodic(Duration(seconds: 1), (timer) { 
+    _timer = Timer.periodic(const Duration(seconds: 1), (timer) { 
       containerHeight.value = isGrowing ? 147.0 : 0.0;
       isGrowing = !isGrowing;
     });
@@ -80,8 +80,8 @@ class ThirdAnimationStatisticController extends GetxController{
   }
 
   void _startTimer(){
-    _timer = Timer.periodic(Duration(seconds: 1), (timer) { 
-      containerHeight.value = isGrowing ? 94.0 : 0.0;
+    _timer = Timer.periodic(const Duration(seconds: 1), (timer) { 
+      containerHeight.value = isGrowing ? 92.0 : 0.0;
       isGrowing = !isGrowing;
     });
   }

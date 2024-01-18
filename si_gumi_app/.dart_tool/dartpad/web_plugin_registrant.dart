@@ -8,6 +8,7 @@
 
 import 'package:camera_web/camera_web.dart';
 import 'package:flutter_keyboard_visibility_web/flutter_keyboard_visibility_web.dart';
+import 'package:flutter_native_splash/flutter_native_splash_web.dart';
 import 'package:image_picker_for_web/image_picker_for_web.dart';
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 
@@ -15,6 +16,7 @@ void registerPlugins([final Registrar? pluginRegistrar]) {
   final Registrar registrar = pluginRegistrar ?? webPluginRegistrar;
   CameraPlugin.registerWith(registrar);
   FlutterKeyboardVisibilityPlugin.registerWith(registrar);
+  FlutterNativeSplashWeb.registerWith(registrar);
   ImagePickerPlugin.registerWith(registrar);
   registrar.registerMessageHandler();
 }

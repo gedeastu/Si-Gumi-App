@@ -75,11 +75,11 @@ class _CameraPageMobileState extends State<CameraPageMobile> {
               children: [
                 Positioned(
                   child: Container(
-                    padding: EdgeInsets.all(5),
+                    padding: const EdgeInsets.all(5),
                     width: 360,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(5),
-                      color: Color.fromARGB(125, 217, 217, 217)
+                      color: const Color.fromARGB(125, 217, 217, 217)
                     ),
                     child: Text("Arahkan kamera ke sampah anda",textAlign: TextAlign.center,style: GoogleFonts.poppins(
                       fontWeight: FontWeight.w600,
@@ -88,31 +88,31 @@ class _CameraPageMobileState extends State<CameraPageMobile> {
                     ),),
                   ),
                 ),
-                SizedBox(height: 30,),
+                const SizedBox(height: 30,),
                 Positioned(
                   child: Container(
                     width: 360,
                     child: Image.asset("assets/images/scannerBorder.png")
                   )
                 ),
-                SizedBox(height: 30,),
+                const SizedBox(height: 30,),
                 Positioned(
                   child: Container(
                     width: 360,
                     height: 80,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
-                      color: Color.fromARGB(125, 217, 217, 217)
+                      color: const Color.fromARGB(125, 217, 217, 217)
                     ),
-                    child: Row(
+                    child: const Row(
                       children: [
                         
                       ],
                     ),
                   )
                 ),
-                SizedBox(height: 20,),
-                Row(
+                const SizedBox(height: 20,),
+                const Row(
 
                 )
               ],
