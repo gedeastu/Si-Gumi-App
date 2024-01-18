@@ -174,7 +174,7 @@ class TableLeaderboard extends StatelessWidget {
                                   ),
                                   SizedBox(width: 100,),
                                   SizedBox(
-                                    width: 60,
+                                    width: 70,
                                     child: Row(
                                       mainAxisAlignment: MainAxisAlignment.start,
                                       children: [
