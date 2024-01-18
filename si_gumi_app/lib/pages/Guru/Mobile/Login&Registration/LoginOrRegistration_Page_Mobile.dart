@@ -65,7 +65,7 @@ class LoginOrRegistrationPageMobile extends StatelessWidget {
                           )
                         ),
                         onPressed: (){
-                        
+                          Get.to(() => Root());
                         }, child: Text("Masuk",style: GoogleFonts.poppins(
                           color: Colors.white,
                           fontWeight: FontWeight.w500
