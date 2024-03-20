@@ -73,39 +73,39 @@ class BigThree extends StatelessWidget {
                 Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                Image.asset("assets/images/crown.png",width: 30,height: 30,),
-                //SvgPicture.asset("assets/images/crown_svg.svg"),
-                GestureDetector(
-                    child: Column(
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(100),
-                            border: Border.all(color: const Color.fromARGB(255, 107, 72, 151),width: 2)
+                  Image.asset("assets/images/crown.png",width: 30,height: 30,),
+                  //SvgPicture.asset("assets/images/crown_svg.svg"),
+                  GestureDetector(
+                      child: Column(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(100),
+                              border: Border.all(color: const Color.fromARGB(255, 107, 72, 151),width: 2)
+                            ),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(100),
+                              child: Image.asset("assets/images/cipungpung.png",height: 50,)
+                            ),
                           ),
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(100),
-                            child: Image.asset("assets/images/cipungpung.png",height: 50,)
+                          Text("Cipungpung",style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w600
+                          ),),
+                          const SizedBox(height: 2,),
+                          Row(
+                            children: [
+                              SvgPicture.asset("assets/images/circle_star.svg",width: 20,height: 20,),
+                              const SizedBox(width: 3,),
+                              Text("12000",style: GoogleFonts.poppins(
+                                fontWeight: FontWeight.w500,
+                                color: const Color.fromARGB(255, 119, 119, 119),
+                                fontSize: 13
+                              ),)
+                            ],
                           ),
-                        ),
-                        Text("Cipungpung",style: GoogleFonts.poppins(
-                          fontWeight: FontWeight.w600
-                        ),),
-                        const SizedBox(height: 2,),
-                        Row(
-                          children: [
-                            SvgPicture.asset("assets/images/circle_star.svg",width: 20,height: 20,),
-                            const SizedBox(width: 3,),
-                            Text("12000",style: GoogleFonts.poppins(
-                              fontWeight: FontWeight.w500,
-                              color: const Color.fromARGB(255, 119, 119, 119),
-                              fontSize: 13
-                            ),)
-                          ],
-                        ),
-                        const SizedBox(height: 2,),
-                      ],
-                    ),
+                          const SizedBox(height: 2,),
+                        ],
+                      ),
                   ),
                   Obx(() => 
                     AnimatedContainer(
@@ -121,7 +121,7 @@ class BigThree extends StatelessWidget {
                 Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                GestureDetector(
+                  GestureDetector(
                     child: Column(
                       children: [
                         Container(

@@ -36,6 +36,12 @@
 @import path_provider_foundation;
 #endif
 
+#if __has_include(<pointer_interceptor_ios/PointerInterceptorIosPlugin.h>)
+#import <pointer_interceptor_ios/PointerInterceptorIosPlugin.h>
+#else
+@import pointer_interceptor_ios;
+#endif
+
 #if __has_include(<sqflite/SqflitePlugin.h>)
 #import <sqflite/SqflitePlugin.h>
 #else
@@ -50,6 +56,7 @@
   [FlutterNativeSplashPlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterNativeSplashPlugin"]];
   [FLTImagePickerPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTImagePickerPlugin"]];
   [PathProviderPlugin registerWithRegistrar:[registry registrarForPlugin:@"PathProviderPlugin"]];
+  [PointerInterceptorIosPlugin registerWithRegistrar:[registry registrarForPlugin:@"PointerInterceptorIosPlugin"]];
   [SqflitePlugin registerWithRegistrar:[registry registrarForPlugin:@"SqflitePlugin"]];
 }
 
