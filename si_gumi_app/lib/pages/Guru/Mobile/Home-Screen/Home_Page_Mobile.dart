@@ -22,8 +22,8 @@ class HomePageMobile extends StatelessWidget {
         )
       ),
       backgroundColor: Colors.white,
-      body: SafeArea(
-        child: SingleChildScrollView(
+      body: //SafeArea(
+         SingleChildScrollView(
           child: SizedBox(
             width: double.infinity,
             child: Column(
@@ -40,7 +40,7 @@ class HomePageMobile extends StatelessWidget {
             ),
           ),
         )
-      ),
+     // ),
     );
   }
 }

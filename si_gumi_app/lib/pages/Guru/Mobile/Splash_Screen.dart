@@ -17,8 +17,8 @@ class _SplashScreenPageMobileState extends State<SplashScreenPageMobile> {
   }
 
   _navigatetohome()async{
-    await Future.delayed(Duration(milliseconds: 1500),(){});
-    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => LoginOrRegistrationLayout(),));
+    await Future.delayed(const Duration(milliseconds: 1500),(){});
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const LoginOrRegistrationLayout(),));
   }
 
   @override
@@ -29,7 +29,7 @@ class _SplashScreenPageMobileState extends State<SplashScreenPageMobile> {
           Container(
             width: double.infinity,
             height: double.infinity,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               image: DecorationImage(image: AssetImage("assets/images/bg_splash_screen.jpg"))
             ),),
           Center(

@@ -11,7 +11,7 @@ class LoginOrRegistrationPageMobile extends StatelessWidget {
       body: Stack(
         children: [
           Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               image: DecorationImage(image: AssetImage(
                 "assets/images/bg_splash_screen.jpg"
               )),
@@ -24,7 +24,7 @@ class LoginOrRegistrationPageMobile extends StatelessWidget {
             // ),
           ),
           Container(
-            margin: EdgeInsets.only(bottom: 30),
+            margin: const EdgeInsets.only(bottom: 30),
             width: double.infinity,
             height: double.infinity,
             child: Column(
@@ -32,7 +32,7 @@ class LoginOrRegistrationPageMobile extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Image.asset("assets/images/logo.png",width: 300,height: 300,),
-                SizedBox(height: 15,),
+                const SizedBox(height: 15,),
                 Container(
                   width: 350,
                   height: 350,
@@ -50,7 +50,7 @@ class LoginOrRegistrationPageMobile extends StatelessWidget {
                       Container(
                         width: 330,
                         child: Text("Langkah pertama menuju lingkungan bersih dan edukatif! Masuk atau daftar akun sekarang bersama Si Gumi.",textAlign: TextAlign.center,style: GoogleFonts.poppins(
-                          color: Color.fromARGB(255, 133, 132, 148),
+                          color: const Color.fromARGB(255, 133, 132, 148),
                           fontSize: 14
                         ),)
                       ),
@@ -59,7 +59,7 @@ class LoginOrRegistrationPageMobile extends StatelessWidget {
                         height: 50,
                         child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Color.fromARGB(255, 58, 145, 170),
+                          backgroundColor: const Color.fromARGB(255, 58, 145, 170),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10)
                           )
@@ -76,7 +76,7 @@ class LoginOrRegistrationPageMobile extends StatelessWidget {
                         height: 50,
                         child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Color.fromARGB(255, 230, 230, 230),
+                          backgroundColor: const Color.fromARGB(255, 230, 230, 230),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10)
                           )
@@ -84,7 +84,7 @@ class LoginOrRegistrationPageMobile extends StatelessWidget {
                         onPressed: (){
                         
                         }, child: Text("Buat Akun Baru",style: GoogleFonts.poppins(
-                          color: Color.fromARGB(255, 58, 145, 170),
+                          color: const Color.fromARGB(255, 58, 145, 170),
                           fontWeight: FontWeight.w500
                         ),)),
                       ),
@@ -103,7 +103,7 @@ class LoginOrRegistrationPageMobile extends StatelessWidget {
                         onPressed: (){
                         
                         }, child: Text("Nanti",style: GoogleFonts.poppins(
-                          color: Color.fromARGB(255, 133, 132, 148),
+                          color: const Color.fromARGB(255, 133, 132, 148),
                           fontWeight: FontWeight.w500
                         ),)),
                       ),
