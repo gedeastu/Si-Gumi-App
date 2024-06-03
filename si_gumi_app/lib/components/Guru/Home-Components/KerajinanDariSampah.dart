@@ -9,7 +9,7 @@ class KerajinanDariSampahHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      alignment: Alignment.centerLeft,
+      alignment: Alignment.center,
       padding: const EdgeInsets.all(20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -40,7 +40,7 @@ class KerajinanDariSampahHome extends StatelessWidget {
                           border: Border.all(color: const Color.fromARGB(255, 36, 59, 118)),
                           image: DecorationImage(image: AssetImage(controller.kerajinanDariSampah[index].bg_card),fit: BoxFit.cover)
                         ),
-                        width: 117,
+                        width: 129,
                         height: 110,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.center,

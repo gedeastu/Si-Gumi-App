@@ -7,7 +7,7 @@ class AppBarHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      toolbarHeight: 90,
+      toolbarHeight: 100,
       backgroundColor: Colors.transparent,
       leading: Container(
         padding: const EdgeInsets.only(left: 20,right: 20),

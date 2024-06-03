@@ -1,11 +1,11 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:si_gumi_app/components/Guru/Home-Components/Announcement-Home.dart';
 import 'package:si_gumi_app/components/Guru/Home-Components/AppBar-Home.dart';
-//import 'package:si_gumi_app/components/Guru/Home-Components/Banner-Home.dart';
 import 'package:si_gumi_app/components/Guru/Home-Components/Carousel-Home.dart';
 import 'package:si_gumi_app/components/Guru/Home-Components/KerajinanDariSampah.dart';
 import 'package:si_gumi_app/components/Guru/Home-Components/PapanPeringkat-Home.dart';
-//import 'package:cached_network_image/cached_network_image.dart';
 
 class HomePageMobile extends StatelessWidget {
   const HomePageMobile({super.key});
@@ -22,7 +22,7 @@ class HomePageMobile extends StatelessWidget {
         )
       ),
       backgroundColor: Colors.white,
-      body: //SafeArea(
+      body: 
          SingleChildScrollView(
           child: SizedBox(
             width: double.infinity,
@@ -30,7 +30,6 @@ class HomePageMobile extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 const CarouselHome(),
-                //BannerHome()
                 const SizedBox(height: 20,),
                 const AnnouncementHome(),
                 const SizedBox(height: 20,),
@@ -40,7 +39,6 @@ class HomePageMobile extends StatelessWidget {
             ),
           ),
         )
-     // ),
     );
   }
 }
